@@ -115,7 +115,8 @@ const Welcome = () => {
                                 ))
                             }
                         </ul>
-                        <div className={`bg-${isScrolled ? '[#277768]' : '[#fff]'} text-${isScrolled ? '[#E1FFA0]' : '[#000]'} cursor-pointer h-[44px] w-[135px] lg:flex justify-center items-center text-[16px] font-bold rounded-md hidden`}>
+                        <div  style={{
+        backgroundColor: isScrolled ? '#277768' : '#fff', }} className={`bg-${isScrolled ? '[#277768]' : '[#fff]'} text-${isScrolled ? '[#E1FFA0]' : '[#000]'} cursor-pointer h-[44px] w-[135px] lg:flex justify-center items-center text-[16px] font-bold rounded-md hidden`}>
                             Open App
                         </div>
                         <div className="w-[40px] h-[40px] flex flex-col justify-center items-center cursor-pointer lg:hidden transition-all duration-300" onClick={() => setHamburger(prev => !prev)}>
