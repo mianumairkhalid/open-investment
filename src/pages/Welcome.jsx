@@ -267,7 +267,10 @@ const Welcome = () => {
                         <div className='w-[45%]'>
                             {tabs.map((tab, index) => (
                                 <div key={index}
-                                    className={`bg-${activeTab === index ? '[#F1FFD2]' : '[#fff]'} border-l-[4px] border-${activeTab === index ? '[#0C231F]' : '[#F1F3F3]'} px-10 py-7 cursor-pointer`}
+                                style={{
+                                    backgroundColor: activeTab === index ? '#F1FFD2' : '#fff',
+                                }}
+                                    className={` border-l-[4px] border-${activeTab === index ? '[#0C231F]' : '[#F1F3F3]'} px-10 py-7 cursor-pointer`}
                                     onClick={() => setActiveTab(index)}>
                                     <div className='flex gap-3'>
                                         <img src={tab.icon} className='w-4 h-4' alt="" />
