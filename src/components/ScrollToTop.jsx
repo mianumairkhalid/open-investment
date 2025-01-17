@@ -28,7 +28,7 @@ export default function ScrollToTop() {
     }, []);
 
     return (
-        <div className="fixed bg-white shadow-lg bottom-8 right-8 z-[99]">
+        <div className="sm:block hidden fixed bg-white shadow-lg bottom-8 right-8 z-[99]">
             {isVisible && (
                 <div
                     onClick={scrollToTop}

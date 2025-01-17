@@ -124,9 +124,15 @@ const Welcome = () => {
                             Open App
                         </div>
                         <div className="w-[40px] h-[40px] flex flex-col justify-center items-center cursor-pointer lg:hidden transition-all duration-300" onClick={() => setHamburger(prev => !prev)}>
-                            <div className={` w-[20px] h-[2px] transition-all duration-500 ${hamburger ? '-rotate-45 translate-y-[8px] delay-200 bg-black' : 'rotate-0 translate-y-0 bg-white'}`}></div>
-                            <div className={`bg-white h-[2px] my-[6px] transition-all duration-300 ${hamburger ? 'w-0' : 'w-[14px] delay-300'}`}></div>
-                            <div className={`w-[20px] h-[2px] transition-all duration-500 ${hamburger ? 'rotate-45 -translate-y-[8px] delay-200 bg-black' : 'rotate-0 translate-y-0 bg-white'}`}></div>
+                            <div  style={{
+                            backgroundColor: isScrolled ? '#000' : '#fff',
+                        }} className={` w-[20px] h-[2px] transition-all duration-500 ${hamburger ? '-rotate-45 translate-y-[8px] delay-200 bg-black' : 'rotate-0 translate-y-0 '}`}></div>
+                            <div  style={{
+                            backgroundColor: isScrolled ? '#000' : '#fff',
+                        }} className={` h-[2px] my-[6px] transition-all duration-300 ${hamburger ? 'w-0' : 'w-[14px] delay-300'}`}></div>
+                            <div  style={{
+                            backgroundColor: isScrolled ? '#000' : '#fff',
+                        }} className={`w-[20px] h-[2px] transition-all duration-500 ${hamburger ? 'rotate-45 -translate-y-[8px] delay-200 bg-black' : 'rotate-0 translate-y-0 '}`}></div>
                         </div>
 
                     </div>
@@ -211,13 +217,13 @@ const Welcome = () => {
                         </p>
                     </div>
 
-                    <div className="lg:w-[33%] md:w-[50%] w-[90%] lg:mt-20 sm:mt-16 mt-10  flex items-center border-[4px] border-[#528879] rounded-lg">
+                    <div className="lg:w-[33%] md:w-[50%] w-[90%] lg:mt-20 sm:mt-16 mt-10  sm:flex items-center border-[4px] border-[#528879] rounded-lg">
                         <input
                             type="text"
                             placeholder="The Future of Banking & Investing"
                             className="p-4 font-inter w-full rounded-l-md bg-white text-gray-700 placeholder-gray-500 focus:outline-none"
                         />
-                        <button className="p-4 font-inter rounded-r-md w-[115px] bg-[#134341] hover:bg-[#268580] text-white font-semibold">
+                        <button className="p-4 font-inter rounded-r-md sm:mt-0 mt-3 w-full sm:w-[115px] bg-[#134341] hover:bg-[#268580] text-white font-semibold">
                             Join us
                         </button>
                     </div>
@@ -295,7 +301,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#FDFEFD] flex justify-center pt-36 sm:px-0 px-4'>
+            <div className='bg-[#FDFEFD] flex justify-center pt-36 sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between'>
                         <div className='sm:w-[45%]'>
@@ -311,7 +317,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center mt-20 sm:px-0 px-4'>
+            <div className='flex justify-center mt-20 sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:w-[67%]'>
                         <h2 className='text-[#0C231F] leading-none lg:text-[48px] text-[36px]  font-inter font-semibold'>Global unity, the future made easy.</h2>
@@ -320,7 +326,7 @@ const Welcome = () => {
                 </div>
 
             </div>
-            <div className='flex justify-center mt-10 tabs-sections sm:px-0 px-4'>
+            <div className='flex justify-center mt-10 tabs-sections sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-center'>
                         <div className='sm:w-[45%]' w-full>
@@ -349,7 +355,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center sm:mt-20 mt-10 tabs-sections sm:px-0 px-4'>
+            <div className='flex justify-center sm:mt-20 mt-10 tabs-sections sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='flex sm:flex-row flex-col-reverse justify-between items-center'>
                         <div className='shadow-lg sm:mt-0 mt-5 sm:w-[49%] pt-[60px] px-[80px] flex justify-center items-center rounded-2xl'
@@ -366,7 +372,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center mt-20 tabs-sections sm:px-0 px-4'>
+            <div className='flex justify-center mt-20 tabs-sections sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-center'>
                         <div className='sm:w-[45%]'>
@@ -383,7 +389,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center sm:mt-28 mt-10 tabs-sections border-b-[4px] border-[#23645E] sm:px-0 px-4'>
+            <div className='flex justify-center sm:mt-28 mt-10 tabs-sections border-b-[4px] border-[#23645E] sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='flex sm:flex-row flex-col-reverse gap-10 justify-between items-end'>
                         <div className='sm:w-[49%]'>
@@ -415,7 +421,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center lg:mt-28 md:mt-16 mt-10 sm:px-0 px-4'>
+            <div className='flex justify-center lg:mt-28 md:mt-16 mt-10 sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex gap-10 justify-between items-center'>
                         <div className='sm:w-[49%]'>
@@ -428,7 +434,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center lg:mt-28 md:mt-10 mt-10 sm:px-0 px-4'>
+            <div className='flex justify-center lg:mt-28 md:mt-10 mt-10 sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex gap-10 justify-between items-center'>
                         <div className='sm:w-[49%] flex items-center justify-center  bg-[#F1F3F3] py-5 px-14 rounded-2xl border-[3px] border-[#23645E]'>
@@ -442,7 +448,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center lg:mt-28 md:mt-10 mt-10 sm:px-0 px-4'>
+            <div className='flex justify-center lg:mt-28 md:mt-10 mt-10 sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='flex sm:flex-row flex-col-reverse gap-10 justify-between items-center'>
 
@@ -456,7 +462,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-4'>
+            <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex gap-10 justify-between items-center'>
                         <div className='sm:w-[45%] flex items-center justify-center  bg-[#F1F3F3] p-8 border-[3px] border-[#23645E]'>
@@ -471,7 +477,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-4'>
+            <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full bg-[#134341] rounded-[20px] shadow-lg'>
                     <div className='sm:flex gap-10 justify-between items-start'>
                         <div className='sm:w-[35%] flex justify-center items-center sm:min-h-[300px] min-h-[150px] relative'
@@ -497,7 +503,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#F1F3F3] flex justify-center -mt-36 lg:pb-[350px] md:pb-[200px] pb-[120px] lg:pt-[350px] md:pt-[250px] pt-[200px] sm:px-0 px-4'>
+            <div className='bg-[#F1F3F3] flex justify-center -mt-36 lg:pb-[350px] md:pb-[200px] pb-[120px] lg:pt-[350px] md:pt-[250px] pt-[200px] sm:px-0 px-2.5'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-start'>
                         <div className='sm:w-[40%]'>
@@ -527,7 +533,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#134341] -mt-[100px] rounded-t-[45px] sm:py-[50px] py-[10px] relative sm:px-0 px-4'>
+            <div className='bg-[#134341] -mt-[100px] rounded-t-[45px] sm:py-[50px] py-[10px] relative sm:px-0 px-2.5'>
                 <div className='opacity-[0.3] w-full h-full absolute top-0 left-0' style={{
                     backgroundColor: 'transparent',
                     backgroundImage: 'radial-gradient(at top center, #FFFFFF94 0%, #FFFFFF00 70%)',
