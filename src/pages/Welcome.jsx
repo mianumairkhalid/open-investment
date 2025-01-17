@@ -243,7 +243,7 @@ const Welcome = () => {
                     backgroundColor: 'transparent',
                     backgroundImage: 'linear-gradient(180deg, #0C231F 0%, #134341 100%)',
                 }}
-                className="text-center sm:rounded-t-[60px] py-[120px] z-[51] relative lg:-mt-20 -mt-10 flex flex-col items-center justify-center"
+                className="text-center sm:rounded-t-[60px] rounded-t-[30px] sm:py-[120px] py-[70px] z-[51] relative lg:-mt-20 -mt-10 flex flex-col items-center justify-center"
             >
 
                 <div className='lg:w-[38%] md:w-[60%]'>
@@ -251,7 +251,7 @@ const Welcome = () => {
                     <h2 className='font-semibold font-inter lg:text-[48px] md:text-[36px] text-[26px]  text-white leading-none'>The only fintech app you’ll ever need.</h2>
                     <p className='mt-3 font-medium text-[#FFFFFF8F] text-base'>Our online trading and banking protocol is user-friendly and easy to navigate.</p>
                 </div>
-                <div className='lg:w-[85%] md:w-[95%] w-full mt-28'>
+                <div className='lg:w-[85%] md:w-[95%] w-full sm:mt-28 mt-5'>
                     <div className='flex flex-wrap sm:gap-16 justify-center'>
                         <div className='lg:w-[20%] sm:w-[40%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
                             <div className='bg-[#284D3D] w-20 h-20 p-3 rounded-full mb-5'>
@@ -301,14 +301,14 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#FDFEFD] flex justify-center pt-36 sm:px-0 px-7'>
+            <div className='bg-[#FDFEFD] flex justify-center sm:pt-36 pt-24 sm:px-0 px-7'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between'>
                         <div className='sm:w-[45%]'>
                             <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Seamless trading and banking solutions.</h2>
-                            <p className='text-[#0c231F99] text-base font-medium font-inter mt-10'>Experience the ultimate financial revolution as you escrow your digital assets to buy stock and commodities options seamlessly.</p>
-                            <p className='text-[#0c231F99] text-base font-medium font-inter mt-5'>With our user-friendly platform, you can trade, swap, and sell tokenised shares with ease, all within a secure and transparent environment. Embrace the power of DeFi and diversify your digital investments to enjoy the potential gains from traditional stock markets. Join us now and unlock a world of limitless possibilities in the exciting realm of decentralised finance. </p>
-                            <p className='text-[#0c231F99] text-base font-medium font-inter mt-10'>Trusted by the world’s most ambitious companies</p>
+                            <p className='text-[#0c231F99] sm:text-base text-sm font-medium font-inter sm:mt-10 mt-5'>Experience the ultimate financial revolution as you escrow your digital assets to buy stock and commodities options seamlessly.</p>
+                            <p className='text-[#0c231F99] sm:text-base text-sm font-medium font-inter mt-5'>With our user-friendly platform, you can trade, swap, and sell tokenised shares with ease, all within a secure and transparent environment. Embrace the power of DeFi and diversify your digital investments to enjoy the potential gains from traditional stock markets. Join us now and unlock a world of limitless possibilities in the exciting realm of decentralised finance. </p>
+                            <p className='text-[#0c231F99] sm:text-base text-sm font-medium font-inter mt-10'>Trusted by the world’s most ambitious companies</p>
                             <img src={chain} className='sm:w-[85%] w-full mt-5' alt="" />
                         </div>
                         <div className='sm:w-[45%]'>
