@@ -8,4 +8,46 @@ font-family: 'Inter' !important;
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+.content-container {
+    position: relative;
+    z-index: 100; /* Ensure content is above the oval */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 100px;
+    color: white;
+    text-align: center;
+}
+
+.oval-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vmax;
+    height: 100vmax;
+    background: conic-gradient(
+        var(--ui-fluid-1, #174743), 
+        var(--ui-fluid-2, #42A893), 
+        var(--ui-fluid-3, #174743), 
+        var(--ui-fluid-4, #A5D89F)
+    );
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: rotateOval 20s linear infinite;
+    z-index: 1;
+}
+
+@keyframes rotateOval {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
