@@ -148,16 +148,16 @@ const Welcome = () => {
 
             </div>
             <div className="wave-animation-container top-section relative overflow-visible h-auto lg:h-screen w-full pt-[120px] md:pt-[200px] lg:pt-[250px] bg-[#174743] text-white flex justify-center">
-    <div className="wave-animation" style={{
-        background: 'linear-gradient(to right, #679977 0%, #517768 30%, rgba(39, 119, 104, 0.3) 50%, #517768 70%, #679977 100%)',
-        backgroundSize: '200% 100%',
-        animation: 'waveAnimation 5s cubic-bezier(0.4, 0, 0.2, 1) infinite, bounceAnimation 3s ease-in-out infinite',
-        height: '100%',
-        position: 'absolute',
-    }}>
-    </div>
+                <div className="wave-animation" style={{
+                    background: 'linear-gradient(to right, #679977 0%, #517768 30%, rgba(39, 119, 104, 0.3) 50%, #517768 70%, #679977 100%)',
+                    backgroundSize: '200% 100%',
+                    animation: 'waveAnimation 5s cubic-bezier(0.4, 0, 0.2, 1) infinite, bounceAnimation 3s ease-in-out infinite',
+                    height: '100%',
+                    position: 'absolute',
+                }}>
+                </div>
 
-    <style jsx>{`
+                <style jsx>{`
         .wave-animation-container {
             width: 100%;
             overflow: hidden;
@@ -198,28 +198,28 @@ const Welcome = () => {
         }
     `}</style>
 
-    <div className='w-full flex flex-col items-center z-50'>
-        <div className="text-center px-10 md:px-[120px] xl:px-[25%]">
-            <p className="text-base font-inter font-semibold text-[#E1FFA0]">All-in-one personal banking and investing solutions.</p>
-            <h1 className="text-[72px] text-white font-inter font-bold leading-none mt-2">Open App.</h1>
-            <p className="text-lg text-[#FFFFFF8F] font-semibold mt-3">
-                Open Investment is a revolutionary app that allows users to trade digital currency
-                for stock and commodities options in a decentralized and immutable exchange.
-            </p>
-        </div>
+                <div className='w-full flex flex-col items-center z-50 sm:pb-0 pb-10 '>
+                    <div className="text-center px-10 md:px-[120px] xl:px-[25%]">
+                        <p className="sm:text-base text-sm font-inter font-semibold text-[#E1FFA0]">All-in-one personal banking and investing solutions.</p>
+                        <h1 className="lg:text-[72px] sm:text-[56px] text-[42px] text-white font-inter font-bold leading-none mt-2">Open App.</h1>
+                        <p className="sm:text-lg text-sm text-[#FFFFFF8F] font-semibold mt-3">
+                            Open Investment is a revolutionary app that allows users to trade digital currency
+                            for stock and commodities options in a decentralized and immutable exchange.
+                        </p>
+                    </div>
 
-        <div className="w-[40%] mt-28 flex items-center border-[4px] border-[#528879] rounded-lg">
-            <input
-                type="text"
-                placeholder="The Future of Banking & Investing"
-                className="p-4 w-full rounded-l-md bg-white text-gray-700 placeholder-gray-500 focus:outline-none"
-            />
-            <button className="p-4 rounded-r-md w-[115px] bg-[#134341] hover:bg-[#268580] text-white font-semibold">
-                Join us
-            </button>
-        </div>
-    </div>
-</div>
+                    <div className="sm:w-[40%] lg:mt-28 sm:mt-20 mt-10  flex items-center border-[4px] border-[#528879] rounded-lg">
+                        <input
+                            type="text"
+                            placeholder="The Future of Banking & Investing"
+                            className="p-4 w-full rounded-l-md bg-white text-gray-700 placeholder-gray-500 focus:outline-none"
+                        />
+                        <button className="p-4 rounded-r-md w-[115px] bg-[#134341] hover:bg-[#268580] text-white font-semibold">
+                            Join us
+                        </button>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -229,17 +229,17 @@ const Welcome = () => {
                     backgroundColor: 'transparent',
                     backgroundImage: 'linear-gradient(180deg, #0C231F 0%, #134341 100%)',
                 }}
-                className="text-center rounded-t-[50px] py-[120px] mt-20 flex flex-col items-center justify-center"
+                className="text-center sm:rounded-t-[50px] py-[120px] sm:mt-20 flex flex-col items-center justify-center"
             >
 
-                <div className='sm:w-[38%]'>
+                <div className='lg:w-[38%] md:w-[60%]'>
                     <p className='font-semibold font-inter text-[#E1FFA0] font-base mb-5'>Why Open Investment?</p>
-                    <h2 className='font-semibold font-inter text-[48px] text-white leading-none'>The only fintech app you’ll ever need.</h2>
+                    <h2 className='font-semibold font-inter lg:text-[48px] text-[36px]  text-white leading-none'>The only fintech app you’ll ever need.</h2>
                     <p className='mt-3 font-medium text-[#FFFFFF8F] text-base'>Our online trading and banking protocol is user-friendly and easy to navigate.</p>
                 </div>
-                <div className='sm:w-[85%] w-full mt-28'>
+                <div className='lg:w-[85%] md:w-[95%] w-full mt-28'>
                     <div className='flex flex-wrap sm:gap-16 justify-center'>
-                        <div className='sm:w-[20%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
+                        <div className='lg:w-[20%] sm:w-[40%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
                             <div className='bg-[#284D3D] w-20 h-20 p-3 rounded-full mb-5'>
                                 <div className='bg-[#517353] w-full h-full rounded-full p-2 flex items-center justify-center'>
                                     <img src={icon1} className='w-full' alt="" />
@@ -250,7 +250,7 @@ const Welcome = () => {
                         </div>
 
 
-                        <div className='sm:w-[20%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
+                        <div className='lg:w-[20%] sm:w-[40%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
                             <div className='bg-[#284D3D] w-20 h-20 p-3 rounded-full mb-5'>
                                 <div className='bg-[#517353] w-full h-full rounded-full p-2 flex items-center justify-center'>
                                     <img src={icon2} className='w-full' alt="" />
@@ -262,7 +262,7 @@ const Welcome = () => {
 
 
 
-                        <div className='sm:w-[20%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
+                        <div className='lg:w-[20%] sm:w-[40%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
                             <div className='bg-[#284D3D] w-20 h-20 p-3 rounded-full mb-5'>
                                 <div className='bg-[#517353] w-full h-full rounded-full p-2 flex items-center justify-center'>
                                     <img src={icon3} className='w-full' alt="" />
@@ -275,7 +275,7 @@ const Welcome = () => {
 
 
 
-                        <div className='sm:w-[20%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
+                        <div className='lg:w-[20%] sm:w-[40%] w-full sm:mt-0 mt-5 sm:px-0 px-5 flex flex-col justify-start items-center'>
                             <div className='bg-[#284D3D] w-20 h-20 p-3 rounded-full mb-5'>
                                 <div className='bg-[#517353] w-full h-full rounded-full p-2 flex items-center justify-center'>
                                     <img src={icon4} className='w-full' alt="" />
@@ -288,10 +288,10 @@ const Welcome = () => {
                 </div>
             </div>
             <div className='bg-[#FDFEFD] flex justify-center pt-36 sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between'>
                         <div className='sm:w-[45%]'>
-                            <h2 className='text-[#0C231F] leading-none sm:text-[48px] text-[36px] font-inter font-semibold'>Seamless trading and banking solutions.</h2>
+                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] text-[36px]  font-inter font-semibold'>Seamless trading and banking solutions.</h2>
                             <p className='text-[#0c231F99] text-base font-medium font-inter mt-10'>Experience the ultimate financial revolution as you escrow your digital assets to buy stock and commodities options seamlessly.</p>
                             <p className='text-[#0c231F99] text-base font-medium font-inter mt-5'>With our user-friendly platform, you can trade, swap, and sell tokenised shares with ease, all within a secure and transparent environment. Embrace the power of DeFi and diversify your digital investments to enjoy the potential gains from traditional stock markets. Join us now and unlock a world of limitless possibilities in the exciting realm of decentralised finance. </p>
                             <p className='text-[#0c231F99] text-base font-medium font-inter mt-10'>Trusted by the world’s most ambitious companies</p>
@@ -304,16 +304,16 @@ const Welcome = () => {
                 </div>
             </div>
             <div className='flex justify-center mt-20 sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:w-[67%]'>
-                        <h2 className='text-[#0C231F] leading-none sm:text-[48px] text-[36px] font-inter font-semibold'>Global unity, the future made easy.</h2>
+                        <h2 className='text-[#0C231F] leading-none lg:text-[48px] text-[36px]  font-inter font-semibold'>Global unity, the future made easy.</h2>
                         <p className='text-[#0c231F99] text-justify text-base font-medium font-inter mt-4'>Fractional equity shares allow investors to own a fraction of a share rather than having to purchase whole shares, instantly and from anywhere in the world. These equity shares will be represented as digital tokens on the blockchain and in users personal wallet, providing the benefits of transparency, security and ease of transfer.</p>
                     </div>
                 </div>
 
             </div>
             <div className='flex justify-center mt-10 tabs-sections sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-center'>
                         <div className='sm:w-[45%]' w-full>
                             {tabs.map((tab, index) => (
@@ -342,7 +342,7 @@ const Welcome = () => {
                 </div>
             </div>
             <div className='flex justify-center sm:mt-20 mt-10 tabs-sections sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='flex sm:flex-row flex-col-reverse justify-between items-center'>
                         <div className='shadow-lg sm:mt-0 mt-5 sm:w-[49%] pt-[60px] px-[80px] flex justify-center items-center rounded-2xl'
                             style={{
@@ -352,17 +352,17 @@ const Welcome = () => {
                             <img src={personalWallet} className='rounded-t-2xl' />
                         </div>
                         <div className='sm:w-[45%] sm:mt-0'>
-                            <h2 className='text-[#0C231F] leading-none sm:text-[48px] text-[32px] font-inter font-semibold'>Complete control over your wealth.</h2>
+                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[34px] text-[32px] font-inter font-semibold'>Complete control over your wealth.</h2>
                             <p className='text-[#0c231F99] text-justify text-base font-medium font-inter mt-4'>Unlike traditional financial systems where a third party, such as a bank, manages your funds, an online wallet allows you to be your own bank. You have the ability to send, receive and manage your Digital assets and fractional shares independently without relying on intermediaries.</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div className='flex justify-center mt-20 tabs-sections sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-center'>
                         <div className='sm:w-[45%]'>
-                            <h2 className='text-[#0C231F] leading-none sm:text-[48px] text-[32px] font-inter font-semibold'>New and traditional financial synergy.</h2>
+                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[34px] text-[32px] font-inter font-semibold'>New and traditional financial synergy.</h2>
                             <p className='text-[#0c231F99] text-justify text-base font-medium font-inter mt-4'>Fractional shares as a means of payment offers global accessibility, wealth diversification, potential appreciation and lower transaction costs. Additional benefits include capital gains tax optimisation, currency conversion saving and no external interventions to freeze personal wealth.</p>
                         </div>
                         <div className='shadow-lg sm:mt-0 mt-5 sm:w-[49%] pt-[60px] px-[80px] flex justify-center items-center rounded-2xl'
@@ -376,30 +376,30 @@ const Welcome = () => {
                 </div>
             </div>
             <div className='flex justify-center sm:mt-28 mt-10 tabs-sections border-b-[4px] border-[#23645E] sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
-                    <div className='flex sm:flex-row flex-col-reverse gap-10 justify-between items-center'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
+                    <div className='flex sm:flex-row flex-col-reverse gap-10 justify-between items-end'>
                         <div className='sm:w-[49%]'>
                             <img src={cards} alt="" />
                         </div>
                         <div className='sm:w-[49%]'>
-                            <h2 className='sm:text-[48px] text-[28px] text-[#0C231F] font-semibold leading-none font-inter'>All-in-one decentralised digital app.</h2>
-                            <div className='sm:mt-10 mt-6 grid grid-cols-2 sm:gap-5 gap-2'>
+                            <h2 className='lg:text-[48px] md:text-[30px] text-[28px] text-[#0C231F] font-semibold leading-none font-inter'>All-in-one decentralised digital app.</h2>
+                            <div className='sm:mt-10 mt-6 grid grid-cols-2 sm:gap-5 gap-2 lg:pb-0 md:pb-5'>
                                 <div className='flex gap-2'>
                                     <img src={check} className='w-3 h-3' alt="" />
-                                    <p className='sm:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Easy-to-Use Interface</p>
+                                    <p className='lg:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Easy-to-Use Interface</p>
                                 </div>
                                 <div className='flex gap-2'>
                                     <img src={check} className='w-3 h-3' alt="" />
-                                    <p className='sm:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Full Escrow Assurance</p>
+                                    <p className='lg:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Full Escrow Assurance</p>
                                 </div>
                                 <div className='flex gap-2'>
                                     <img src={check} className='w-3 h-3' alt="" />
-                                    <p className='sm:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Digital to Equity Opions
+                                    <p className='lg:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Digital to Equity Opions
                                     </p>
                                 </div>
                                 <div className='flex gap-2'>
                                     <img src={check} className='w-3 h-3' alt="" />
-                                    <p className='sm:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Community DOA</p>
+                                    <p className='lg:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Community DOA</p>
                                 </div>
                             </div>
                         </div>
@@ -407,8 +407,8 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+            <div className='flex justify-center lg:mt-28 md:mt-16 mt-10 sm:px-0 px-4'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex gap-10 justify-between items-center'>
                         <div className='sm:w-[49%]'>
                             <h2 className='text-[#0C231F] leading-none sm:text-[48px] text-[40px] font-inter font-semibold'>About Us</h2>
@@ -420,26 +420,26 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+            <div className='flex justify-center lg:mt-28 md:mt-10 mt-10 sm:px-0 px-4'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex gap-10 justify-between items-center'>
                         <div className='sm:w-[49%] flex items-center justify-center  bg-[#F1F3F3] py-5 px-14 rounded-2xl border-[3px] border-[#23645E]'>
                             <img src={contract} alt="" />
                         </div>
                         <div className='sm:w-[49%] sm:pl-10'>
-                            <h2 className='text-[#0C231F] sm:mt-0 mt-5 leading-none sm:text-[48px] text-[36px] font-inter font-semibold'>Smart contract automation</h2>
+                            <h2 className='text-[#0C231F] sm:mt-0 mt-5 leading-none lg:text-[48px] text-[36px]  font-inter font-semibold'>Smart contract automation</h2>
                             <p className='text-[#0c231F99] text-justify text-base font-medium font-inter sm:mt-5 mt-3'>Smart contracts are at the heart of our groundbreaking approach to tokenised shares and secure transactions. Leveraging the power of smart contracts, we offer users the ability to trade and invest in tokenised shares seamlessly, without the need for traditional intermediaries. When users decide to lock their digital currency for tokenised shares, our smart contract escrow lock ensures that their funds are held securely until the predetermined conditions are met. </p>
                         </div>
 
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+            <div className='flex justify-center lg:mt-28 md:mt-10 mt-10 sm:px-0 px-4'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='flex sm:flex-row flex-col-reverse gap-10 justify-between items-center'>
 
                         <div className='sm:w-[49%] sm:pr-10'>
-                            <h2 className='text-[#0C231F] leading-none sm:text-[48px] text-[36px] font-inter font-semibold'>Smart contract automation</h2>
+                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] text-[36px]  font-inter font-semibold'>Smart contract automation</h2>
                             <p className='text-[#0c231F99] text-justify text-base font-medium font-inter mt-5'>Smart contracts are at the heart of our groundbreaking approach to tokenised shares and secure transactions. Leveraging the power of smart contracts, we offer users the ability to trade and invest in tokenised shares seamlessly, without the need for traditional intermediaries. When users decide to lock their digital currency for tokenised shares, our smart contract escrow lock ensures that their funds are held securely until the predetermined conditions are met. </p>
                         </div>
                         <div className='sm:w-[49%] flex items-center justify-center  bg-[#F1F3F3] py-5 px-14 rounded-2xl border-[3px] border-[#23645E]'>
@@ -449,13 +449,13 @@ const Welcome = () => {
                 </div>
             </div>
             <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex gap-10 justify-between items-center'>
                         <div className='sm:w-[45%] flex items-center justify-center  bg-[#F1F3F3] p-8 border-[3px] border-[#23645E]'>
                             <img src={tradingInvesting} className='w-full' alt="" />
                         </div>
                         <div className='sm:w-[54%] sm:pl-3 sm:mt-0 mt-5'>
-                            <h2 className='text-[#0C231F] leading-none sm:text-[48px] text-[32px] font-inter font-semibold'>Swap your currencies into equity in just one click.</h2>
+                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[34px] text-[32px] font-inter font-semibold'>Swap your currencies into equity in just one click.</h2>
                             <p className='text-[#0c231F99] text-base font-medium font-inter sm:mt-5 mt-3'>Welcome to Open, where digital trading meets stock market. Our cutting-edge platform is designed to provide you with the best experience, with a wide range of features that cater to every investor’s needs.</p>
                             <button className='hover:bg-[#E1FFA0] hover:text-[#35816C] bg-[#35816C] text-[#E1FFA0] transition sm:px-8 sm:py-3.5 px-6 py-2.5 text-base rounded-lg mt-5  font-semibold font-inter '>Learn More</button>
                         </div>
@@ -464,7 +464,7 @@ const Welcome = () => {
                 </div>
             </div>
             <div className='flex justify-center sm:mt-28 mt-10 sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full bg-[#134341] rounded-[20px] shadow-lg'>
+                <div className='lg:w-[85%] md:w-[95%] w-full bg-[#134341] rounded-[20px] shadow-lg'>
                     <div className='sm:flex gap-10 justify-between items-start'>
                         <div className='sm:w-[35%] flex justify-center items-center sm:min-h-[300px] min-h-[150px] relative'
                             style={{
@@ -479,7 +479,7 @@ const Welcome = () => {
                             }}></div>
                         </div>
                         <div className='sm:w-[60%] sm:pt-[70px] sm:pr-[70px] pr-[20px] sm:pl-0 pl-[20px] sm:pb-0 pb-[20px]'>
-                            <p className='font-inter sm:text-lg text-base font-semibold text-white'>
+                            <p className='font-inter lg:text-lg text-base font-semibold text-white'>
                                 "We believe that integrating tokenised fractional shares as a means of payment has the potential to revolutionise the financial landscape. We strive for financial inclusion, where anyone, regardless of their financial means, can leverage their fractional ownership to transact and thrive in a borderless and equitable world"
                             </p>
                             <h4 className='font-inter text-base text-[#E1FFA0] font-medium mt-5'>
@@ -489,30 +489,30 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#F1F3F3] flex justify-center -mt-36 sm:pb-[350px] pb-[120px] sm:pt-[350px] pt-[200px] sm:px-0 px-4'>
-                <div className='sm:w-[85%] w-full'>
+            <div className='bg-[#F1F3F3] flex justify-center -mt-36 lg:pb-[350px] md:pb-[200px] pb-[120px] lg:pt-[350px] md:pt-[250px] pt-[200px] sm:px-0 px-4'>
+                <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-start'>
                         <div className='sm:w-[40%]'>
                             <img src={walletIntegrations} className='sm:w-[13%] w-[20%]' alt="" />
-                            <h2 className='text-[#0C231F] leading-none sm:text-[48px] text-[36px] font-inter font-semibold mt-5'>Wallet Integrations</h2>
-                            <p className='text-[rgba(12, 35, 31, 0.6)] text-base font-medium font-inter mt-5'>Wallet integration combines diverse digital assets into a single interface, offering users seamless management and control. With enhanced security measures and accessibility across devices, users can conveniently send, receive and participate in DeFi activities. The integration provides valuable insight into asset performance, empowering users to make informed decisions while ensuring their funds are protected.</p>
+                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] text-[36px]  font-inter font-semibold mt-5'>Wallet Integrations</h2>
+                            <p className='text-[rgba(12, 35, 31, 0.6)] lg:text-base text-sm font-medium font-inter mt-5'>Wallet integration combines diverse digital assets into a single interface, offering users seamless management and control. With enhanced security measures and accessibility across devices, users can conveniently send, receive and participate in DeFi activities. The integration provides valuable insight into asset performance, empowering users to make informed decisions while ensuring their funds are protected.</p>
                             <button className='hover:bg-[#E1FFA0] hover:text-[#35816C] bg-[#0C231F] text-[#E1FFA0] transition px-7 py-2.5 rounded-lg mt-5 text-base font-semibold font-inter '>Learn More</button>
                         </div>
                         <div className='sm:w-[50%] sm:mt-0 mt-8 grid grid-cols-2 gap-10'>
                             <div>
-                                <img src={coinbase} className='sm:w-[30%] w-[50%]' alt="" />
+                                <img src={coinbase} className='lg:w-[30%] w-[50%]' alt="" />
                                 <p className='text-[#0C231F] text-base font-medium font-inter mt-5'>Make secure payments online, and transfer digital currency with just a touch of your device.</p>
                             </div>
                             <div>
-                                <img src={metaMask} className='sm:w-[30%] w-[50%]' alt="" />
+                                <img src={metaMask} className='lg:w-[30%] w-[50%]' alt="" />
                                 <p className='text-[#0C231F] text-base font-medium font-inter mt-5'>Easily link your personal wallet account to our platform for seamless and secure trading.</p>
                             </div>
                             <div>
-                                <img src={metaMask} className='sm:w-[30%] w-[50%]' alt="" />
+                                <img src={metaMask} className='lg:w-[30%] w-[50%]' alt="" />
                                 <p className='text-[#0C231F] text-base font-medium font-inter mt-5'>Accept payments from customers around the world directly, whilst storing your wealth offline and off-grid.</p>
                             </div>
                             <div>
-                                <img src={openWallet} className='sm:w-[30%] w-[50%]' alt="" />
+                                <img src={openWallet} className='lg:w-[30%] w-[50%]' alt="" />
                                 <p className='text-[#0C231F] text-base font-medium font-inter mt-5'>Coming Soon! Open wallet with additional security features and escrow assurance on funds.</p>
                             </div>
                         </div>
@@ -525,7 +525,7 @@ const Welcome = () => {
                     backgroundImage: 'radial-gradient(at top center, #FFFFFF94 0%, #FFFFFF00 70%)',
                 }}></div>
                 <div className='flex justify-center border-b border-[#FFFFFF1F] pb-[50px]'>
-                    <div className='sm:w-[85%] w-full mt-[50px] z-50'>
+                    <div className='lg:w-[85%] md:w-[95%] w-full mt-[50px] z-50'>
                         <div className='sm:flex justify-between items-center'>
                             <div className='sm:w-[35%]'>
                                 <h2 className='font-inter text-[36px] font-semibold text-white'>Contact Information</h2>
@@ -549,7 +549,7 @@ const Welcome = () => {
                     </div>
                 </div>
                 <div className='pt-[70px] border-b border-[#FFFFFF1F] pb-[50px] flex justify-center'>
-                    <div className='sm:w-[85%] w-full sm:gap-0 gap-5 flex sm:flex-nowrap flex-wrap justify-between'>
+                    <div className='lg:w-[85%] md:w-[95%] w-full sm:gap-0 gap-5 flex sm:flex-nowrap flex-wrap justify-between'>
                         <div className='sm:w-[20%] w-[40%]'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Product</h4>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Overview</p>
@@ -582,13 +582,13 @@ const Welcome = () => {
                         </div>
                     </div>
                 </div>
-                <div className='pt-[40px] pb-[px] flex justify-center'>
-                    <div className='sm:w-[85%] w-full flex justify-between'>
+                <div className='sm:pt-[40px] pb-[px] flex justify-center'>
+                    <div className='lg:w-[85%] md:w-[95%] w-full flex justify-between items-center'>
                         <div className='w-[50%]'>
-                            <img src={logo} className='w-[15%]' alt="" />
+                            <img src={logo} className='lg:w-[15%] md:w-[35%] w-[50%]' alt="" />
                         </div>
                         <div className='w-[50%]'>
-                            <p className='font-inter text-lg text-white font-medium mt-5'>Copyright: © 2025 Open Investment by Eni Koci. All Rights Reserved.</p>
+                            <p className='font-inter sm:text-lg text-sm text-white font-medium mt-5'>Copyright: © 2025 Open Investment by Eni Koci. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
