@@ -139,7 +139,7 @@ const Welcome = () => {
 
                 </div>
             </header>
-            <div className={`lg:hidden bg-white  fixed z-30 w-full transition-all duration-500 ${hamburger ? 'translate-y-[70px] h-screen pt-[0px] md:pt-[100px]' : '-translate-y-[300px]'}`}>
+            <div className={`lg:hidden bg-white  fixed z-[100] w-full transition-all duration-500 ${hamburger ? 'translate-y-[70px] h-screen pt-[0px] md:pt-[100px]' : '-translate-y-[300px]'}`}>
                 <ul className={`w-auto h-auto py-4 px-2  mx-0 outline-4 `}>
                     {
                         navLinks.map((item, key) => (
@@ -239,6 +239,7 @@ const Welcome = () => {
 
 
             <div
+            id='overview'
                 style={{
                     backgroundColor: 'transparent',
                     backgroundImage: 'linear-gradient(180deg, #0C231F 0%, #134341 100%)',
@@ -317,7 +318,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center mt-20 sm:px-0 px-7'>
+            <div className='flex justify-center mt-20 sm:px-0 px-7' id='features'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:w-[67%]'>
                         <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Global unity, the future made easy.</h2>
@@ -504,9 +505,9 @@ const Welcome = () => {
                 </div>
             </div>
             <div className='bg-[#F1F3F3] flex justify-center -mt-36 lg:pb-[350px] md:pb-[200px] pb-[120px] lg:pt-[350px] md:pt-[250px] pt-[200px] sm:px-0 px-7'>
-                <div className='lg:w-[85%] md:w-[95%] w-full'>
+                <div id='integrations'  className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-start'>
-                        <div className='sm:w-[40%]'>
+                        <div  className='sm:w-[40%]'>
                             <img src={walletIntegrations} className='sm:w-[13%] w-[20%]' alt="" />
                             <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold mt-5'>Wallet Integrations</h2>
                             <p className='text-[rgba(12, 35, 31, 0.6)] lg:text-base text-sm font-medium font-inter mt-5'>Wallet integration combines diverse digital assets into a single interface, offering users seamless management and control. With enhanced security measures and accessibility across devices, users can conveniently send, receive and participate in DeFi activities. The integration provides valuable insight into asset performance, empowering users to make informed decisions while ensuring their funds are protected.</p>
