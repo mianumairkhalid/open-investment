@@ -97,7 +97,7 @@ const Welcome = () => {
 
             <header style={{
                 boxShadow: "-2px 3px 90px -20px rgb(0 0 0 / 25%)",
-            }} ref={headerRef} className={`${headerClassName} transition-transform duration-300`}>
+            }} ref={headerRef} className={`${headerClassName} z-[101] transition-transform duration-300`}>
                 <div className='w-full mx-auto flex items-center justify-between px-2'>
                     <div className='flex items-center justify-between w-full '>
                         <img src={logo} alt="" className='md:h-[70px] h-[26px]' />
