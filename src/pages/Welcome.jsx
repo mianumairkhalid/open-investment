@@ -147,41 +147,83 @@ const Welcome = () => {
                 </ul>
 
             </div>
-            {/* <div style={{background: '#174643',}}>
-    <div className="content-container">
-      <h1>This is the heading</h1>
-  </div>
-  <div className="oval-container"></div>
-   </div> */}
-            <div className="relative overflow-hidden h-auto lg:h-screen w-full pt-[120px] md:pt-[200px] lg:pt-[250px] bg-[#174743] text-white flex justify-center">
-                <div className='w-full flex flex-col items-center'>
-                    <div className="w-full h-full">
-                        <div className="oval-container"></div>
-                    </div>
-                    <div className="z-50 text-center px-10 md:px-[120px] xl:px-[25%]">
-                        <p className="text-base font-inter font-semibold text-[#E1FFA0]">All-in-one personal banking and investing solutions.</p>
-                        <h1 className="text-[72px] text-white font-inter font-bold leading-none mt-2">Open App.</h1>
-                        <p className="text-lg text-[#FFFFFF8F] font-semibold mt-3">
-                            Open Investment is a revolutionary app that allows users to trade digital currency
-                            for stock and commodities options in a decentralized and immutable exchange.
-                        </p>
-                    </div>
+            <div className="wave-animation-container top-section relative overflow-visible h-auto lg:h-screen w-full pt-[120px] md:pt-[200px] lg:pt-[250px] bg-[#174743] text-white flex justify-center">
+    <div className="wave-animation" style={{
+        background: 'linear-gradient(to right, #679977 0%, #517768 30%, rgba(39, 119, 104, 0.3) 50%, #517768 70%, #679977 100%)',
+        backgroundSize: '200% 100%',
+        animation: 'waveAnimation 5s cubic-bezier(0.4, 0, 0.2, 1) infinite, bounceAnimation 3s ease-in-out infinite',
+        height: '100%',
+        position: 'absolute',
+    }}>
+    </div>
 
-                    <div className="z-50 w-[40%] mt-28 flex items-center border-[4px] border-[#528879] rounded-lg">
-                        <input
-                            type="text"
-                            placeholder="The Future of Banking & Investing"
-                            className="p-4 w-full rounded-l-md bg-white text-gray-700 placeholder-gray-500 focus:outline-none"
-                        />
-                        <button className="p-4 rounded-r-md w-[115px] bg-[#134341] hover:bg-[#268580] text-white font-semibold">
-                            Join us
-                        </button>
-                    </div>
-                </div>
+    <style jsx>{`
+        .wave-animation-container {
+            width: 100%;
+            overflow: hidden;
+        }
 
-                {/* Cards Section */}
-                {/* <img src={card} className='w-[66%] lg:w-1/2' alt="" /> */}
-            </div>
+        .wave-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            animation-fill-mode: both; 
+            opacity: 0.5;
+        }
+
+        /* Keyframe for horizontal wave effect */
+        @keyframes waveAnimation {
+            0% {
+                background-position: 200% 0;
+            }
+            50% {
+                background-position: 100% 0;
+            }
+            100% {
+                background-position: 0 0;
+            }
+        }
+
+        /* Keyframe for vertical bounce effect */
+        @keyframes bounceAnimation {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(10px);
+            }
+        }
+    `}</style>
+
+    <div className='w-full flex flex-col items-center z-50'>
+        <div className="text-center px-10 md:px-[120px] xl:px-[25%]">
+            <p className="text-base font-inter font-semibold text-[#E1FFA0]">All-in-one personal banking and investing solutions.</p>
+            <h1 className="text-[72px] text-white font-inter font-bold leading-none mt-2">Open App.</h1>
+            <p className="text-lg text-[#FFFFFF8F] font-semibold mt-3">
+                Open Investment is a revolutionary app that allows users to trade digital currency
+                for stock and commodities options in a decentralized and immutable exchange.
+            </p>
+        </div>
+
+        <div className="w-[40%] mt-28 flex items-center border-[4px] border-[#528879] rounded-lg">
+            <input
+                type="text"
+                placeholder="The Future of Banking & Investing"
+                className="p-4 w-full rounded-l-md bg-white text-gray-700 placeholder-gray-500 focus:outline-none"
+            />
+            <button className="p-4 rounded-r-md w-[115px] bg-[#134341] hover:bg-[#268580] text-white font-semibold">
+                Join us
+            </button>
+        </div>
+    </div>
+</div>
+
+
+
+
             <div
                 style={{
                     backgroundColor: 'transparent',
