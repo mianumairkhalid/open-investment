@@ -68,8 +68,8 @@ const Welcome = () => {
     }, [lastScrollTop]);
 
     const headerClassName = isScrolled ?
-        'fixed z-40 top-0 left-0 py-[15px] md:py-[30px] px-5 md:px-[70px] sm:px-8 w-full flex items-center font backdrop-blur-[30px] transition-all duration-300 bg-white' :
-        'fixed z-40 top-0 left-0 py-[15px] md:py-[30px] px-5 md:px-[70px] sm:px-8 w-full flex items-center border-b-[#4F7770] border-b-[1px] font backdrop-blur-[30px] transition-all duration-300';
+        'fixed z-40 top-0 left-0 py-[15px] md:py-[30px] px-5 md:px-[70px] sm:px-8 w-full flex items-center transition-all duration-300 bg-white' :
+        'fixed z-40 top-0 left-0 py-[15px] md:py-[30px] px-5 md:px-[70px] sm:px-8 w-full flex items-center border-b-[#4F7770] border-b-[1px] transition-all duration-300';
 
     const tabs = [
         {
@@ -95,9 +95,11 @@ const Welcome = () => {
     return (
         <div className="w-full">
 
-            <header style={{
-                boxShadow: "-2px 3px 90px -20px rgb(0 0 0 / 25%)",
-            }} ref={headerRef} className={`${headerClassName} z-[101] transition-transform duration-300`}>
+            <header 
+            // style={{
+            //     boxShadow: "-2px 3px 90px -20px rgb(0 0 0 / 25%)",
+            // }}
+             ref={headerRef} className={`${headerClassName} z-[101] transition-transform duration-300`}>
                 <div className='w-full mx-auto flex items-center justify-between px-2'>
                     <div className='flex items-center justify-between w-full '>
                         <img src={logo} alt="" className='md:h-[70px] h-[26px]' />
@@ -152,7 +154,7 @@ const Welcome = () => {
                 <div className="wave-animation" style={{
                     background: 'linear-gradient(to right, #679977 0%, #517768 30%, rgba(39, 119, 104, 0.3) 50%, #517768 70%, #679977 100%)',
                     backgroundSize: '200% 100%',
-                    animation: 'waveAnimation 5s cubic-bezier(0.4, 0, 0.2, 1) infinite, bounceAnimation 3s ease-in-out infinite',
+                    animation: 'waveAnimation 8s cubic-bezier(0.4, 0, 0.2, 1) infinite',
                     height: '100%',
                     position: 'absolute',
                 }}>
@@ -209,7 +211,7 @@ const Welcome = () => {
                         </p>
                     </div>
 
-                    <div className="sm:w-[33%] lg:mt-20 sm:mt-16 mt-10  flex items-center border-[4px] border-[#528879] rounded-lg">
+                    <div className="lg:w-[33%] md:w-[50%] w-[90%] lg:mt-20 sm:mt-16 mt-10  flex items-center border-[4px] border-[#528879] rounded-lg">
                         <input
                             type="text"
                             placeholder="The Future of Banking & Investing"
@@ -235,7 +237,7 @@ const Welcome = () => {
                     backgroundColor: 'transparent',
                     backgroundImage: 'linear-gradient(180deg, #0C231F 0%, #134341 100%)',
                 }}
-                className="text-center sm:rounded-t-[50px] py-[120px] sm:mt-20 flex flex-col items-center justify-center"
+                className="text-center sm:rounded-t-[60px] py-[120px] z-[51] relative lg:-mt-20 -mt-10 flex flex-col items-center justify-center"
             >
 
                 <div className='lg:w-[38%] md:w-[60%]'>
