@@ -10,6 +10,7 @@ import icon4 from "../asset/icon4.png"
 import chain from "../asset/chain.png"
 import tab1 from "../asset/tab1.png"
 import tab2 from "../asset/tab2.png"
+import topDots from "../asset/topDots.png"
 import tab3 from "../asset/tab3.png"
 import contract from "../asset/contract.png"
 import tabImg2 from "../asset/tabImg2.png"
@@ -147,7 +148,7 @@ const Welcome = () => {
                 </ul>
 
             </div>
-            <div className="wave-animation-container top-section relative overflow-visible h-auto lg:h-screen w-full pt-[120px] md:pt-[200px] lg:pt-[250px] bg-[#174743] text-white flex justify-center">
+            <div className="wave-animation-container top-section relative overflow-visible h-auto lg:min-h-screen w-full pt-[120px] md:pt-[200px] lg:pt-[200px] bg-[#174743] text-white flex justify-center">
                 <div className="wave-animation" style={{
                     background: 'linear-gradient(to right, #679977 0%, #517768 30%, rgba(39, 119, 104, 0.3) 50%, #517768 70%, #679977 100%)',
                     backgroundSize: '200% 100%',
@@ -208,15 +209,20 @@ const Welcome = () => {
                         </p>
                     </div>
 
-                    <div className="sm:w-[40%] lg:mt-28 sm:mt-20 mt-10  flex items-center border-[4px] border-[#528879] rounded-lg">
+                    <div className="sm:w-[33%] lg:mt-20 sm:mt-16 mt-10  flex items-center border-[4px] border-[#528879] rounded-lg">
                         <input
                             type="text"
                             placeholder="The Future of Banking & Investing"
-                            className="p-4 w-full rounded-l-md bg-white text-gray-700 placeholder-gray-500 focus:outline-none"
+                            className="p-4 font-inter w-full rounded-l-md bg-white text-gray-700 placeholder-gray-500 focus:outline-none"
                         />
-                        <button className="p-4 rounded-r-md w-[115px] bg-[#134341] hover:bg-[#268580] text-white font-semibold">
+                        <button className="p-4 font-inter rounded-r-md w-[115px] bg-[#134341] hover:bg-[#268580] text-white font-semibold">
                             Join us
                         </button>
+                    </div>
+
+                    <div className="flex justify-center relative mt-5">
+                        <img src={card} className="w-[60%] z-50" alt="" />
+                        <img src={topDots} className='absolute top-0 left-50' alt="" />
                     </div>
                 </div>
             </div>
