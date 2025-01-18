@@ -229,7 +229,7 @@ const Welcome = () => {
                     </div>
 
                     <div className="flex justify-center relative mt-5">
-                        <img src={card} className="w-[60%] z-50" alt="" />
+                        <img src={card} className="sm:w-[60%] w-[85%] sm:mb-0 -mb-5 z-50" alt="" />
                         <img src={topDots} className='absolute top-0 left-50' alt="" />
                     </div>
                 </div>
