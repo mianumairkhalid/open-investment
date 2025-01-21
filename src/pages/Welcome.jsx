@@ -161,7 +161,7 @@ const Welcome = () => {
                 <div className="wave-animation" style={{
                     background: 'linear-gradient(to right, #679977 0%, #517768 30%, rgba(39, 119, 104, 0.3) 50%, #517768 70%, #679977 100%)',
                     backgroundSize: '200% 100%',
-                    animation: 'waveAnimation 8s cubic-bezier(0.4, 0, 0.2, 1) infinite',
+                    animation: 'waveAnimation 4s cubic-bezier(0.4, 0, 0.2, 1) infinite',
                     height: '100%',
                     position: 'absolute',
                 }}>
