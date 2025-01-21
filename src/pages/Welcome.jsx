@@ -26,6 +26,7 @@ import openLogo from "../asset/openLogo.png"
 import escrow from "../asset/escrow.png"
 import email from "../asset/email.png"
 import phone from "../asset/phone.png"
+import icp from "../asset/icp.png"
 import location from "../asset/location.png"
 import tradingInvesting from "../asset/tradingInvesting.png"
 import currenies from "../asset/currencies.webp"
@@ -47,12 +48,12 @@ const Welcome = () => {
             if (scrollTop > lastScrollTop) {
                 // Scrolling down
                 if (headerRef.current) {
-                    headerRef.current.style.transform = 'translateY(-100%)';
+                    headerRef.current.style.opacity = '0';
                 }
             } else {
                 // Scrolling up
                 if (headerRef.current) {
-                    headerRef.current.style.transform = 'translateY(0)';
+                    headerRef.current.style.opacity = '1';
                 }
             }
             // Update last scroll position
@@ -80,7 +81,7 @@ const Welcome = () => {
         },
         {
             title: "Immutable Transaction History",
-            content: "Raise invoices and receive instant payment in the form of tokenised shares to your personal wallet. Make payments for goods and services with no banking fees or capital risk.",
+            content: "All trading and transaction history will be logged into the blockchain providing information on all live holdings and trades whilst still maintaining user anonymity.",
             image: tabImg2,
             icon: tab2
         },
@@ -96,10 +97,10 @@ const Welcome = () => {
         <div className="w-full">
 
             <header 
-            // style={{
-            //     boxShadow: "-2px 3px 90px -20px rgb(0 0 0 / 25%)",
-            // }}
-             ref={headerRef} className={`${headerClassName} z-[101] transition-transform duration-300`}>
+            style={{
+                transition: "0.5s ease",
+            }}
+             ref={headerRef}  className={`${headerClassName} z-[101] duration-300 shadow-sm`}>
                 <div className='w-full mx-auto flex items-center justify-between px-2'>
                     <div className='flex items-center justify-between w-full '>
                         <img src={logo} alt="" className='md:h-[70px] h-[26px]' />
@@ -249,7 +250,7 @@ const Welcome = () => {
 
                 <div className='lg:w-[38%] md:w-[60%]'>
                     <p className='font-semibold font-inter text-[#E1FFA0] font-base mb-5'>Why Open Investment?</p>
-                    <h2 className='font-semibold font-inter lg:text-[48px] md:text-[36px] text-[26px]  text-white leading-none'>The only fintech app you’ll ever need.</h2>
+                    <h2 className='font-bold font-inter lg:text-[48px] md:text-[36px] text-[26px]  text-white leading-none'>The only fintech app you’ll ever need.</h2>
                     <p className='mt-3 font-medium text-[#FFFFFF8F] text-base'>Our online trading and banking protocol is user-friendly and easy to navigate.</p>
                 </div>
                 <div className='lg:w-[85%] md:w-[95%] w-full sm:mt-28 mt-5'>
@@ -396,25 +397,25 @@ const Welcome = () => {
                         <div className='sm:w-[49%]'>
                             <img src={cards} alt="" />
                         </div>
-                        <div className='sm:w-[49%]'>
+                        <div className='sm:w-[49%] sm:pb-14'>
                             <h2 className='lg:text-[48px] md:text-[30px] text-[28px] text-[#0C231F] font-semibold leading-none font-inter'>All-in-one decentralised digital app.</h2>
                             <div className='sm:mt-10 mt-6 grid sm:grid-cols-2 sm:gap-5 gap-5 lg:pb-0 md:pb-5'>
-                                <div className='flex gap-2'>
+                                <div className='flex gap-2 items-center'>
                                     <img src={check} className='w-3 h-3' alt="" />
-                                    <p className='lg:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Easy-to-Use Interface</p>
+                                    <p className='lg:text-[17px] text-sm font-inter leading-none font-medium text-[#0C231F]'>Easy-to-Use Interface</p>
                                 </div>
-                                <div className='flex gap-2'>
+                                <div className='flex gap-2 items-center'>
                                     <img src={check} className='w-3 h-3' alt="" />
-                                    <p className='lg:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Full Escrow Assurance</p>
+                                    <p className='lg:text-[17px] text-sm font-inter leading-none font-medium text-[#0C231F]'>Full Escrow Assurance</p>
                                 </div>
-                                <div className='flex gap-2'>
+                                <div className='flex gap-2 items-center'>
                                     <img src={check} className='w-3 h-3' alt="" />
-                                    <p className='lg:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Digital to Equity Opions
+                                    <p className='lg:text-[17px] text-sm font-inter leading-none font-medium text-[#0C231F]'>Digital to Equity Opions
                                     </p>
                                 </div>
-                                <div className='flex gap-2'>
+                                <div className='flex gap-2 items-center'>
                                     <img src={check} className='w-3 h-3' alt="" />
-                                    <p className='lg:text-base text-sm font-inter leading-none font-medium text-[#0C231F]'>Community DOA</p>
+                                    <p className='lg:text-[17px] text-sm font-inter leading-none font-medium text-[#0C231F]'>Community DOA</p>
                                 </div>
                             </div>
                         </div>
@@ -454,8 +455,8 @@ const Welcome = () => {
                     <div className='flex sm:flex-row flex-col-reverse gap-10 justify-between items-center'>
 
                         <div className='sm:w-[49%] sm:pr-10'>
-                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Smart contract automation</h2>
-                            <p className='text-[#0c231F99] text-base font-medium font-inter mt-5'>Smart contracts are at the heart of our groundbreaking approach to tokenised shares and secure transactions. Leveraging the power of smart contracts, we offer users the ability to trade and invest in tokenised shares seamlessly, without the need for traditional intermediaries. When users decide to lock their digital currency for tokenised shares, our smart contract escrow lock ensures that their funds are held securely until the predetermined conditions are met. </p>
+                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Escrow assurance and security</h2>
+                            <p className='text-[#0c231F99] text-base font-medium font-inter mt-5'>Our innovative approach provides users with exposure to traditional stock markets without the need to convert their digital assets into fiat. By keeping their funds within the platform, users avoid extra fees and complexities associated with transferring funds between different accounts. Additionally, this integration allows for seamless and instantaneous trading between tokenized shares and fiat, enabling users to capitalize on market opportunities swiftly. </p>
                         </div>
                         <div className='sm:w-[49%] flex items-center justify-center  bg-[#F1F3F3] py-5 px-14 rounded-2xl border-[3px] border-[#23645E]'>
                             <img src={escrow} className='w-[70%]' alt="" />
@@ -513,22 +514,22 @@ const Welcome = () => {
                             <p className='text-[rgba(12, 35, 31, 0.6)] lg:text-base text-sm font-medium font-inter mt-5'>Wallet integration combines diverse digital assets into a single interface, offering users seamless management and control. With enhanced security measures and accessibility across devices, users can conveniently send, receive and participate in DeFi activities. The integration provides valuable insight into asset performance, empowering users to make informed decisions while ensuring their funds are protected.</p>
                             <button className='hover:bg-[#E1FFA0] hover:text-[#35816C] bg-[#0C231F] text-[#E1FFA0] transition px-7 py-2.5 rounded-lg mt-5 text-base font-semibold font-inter '>Learn More</button>
                         </div>
-                        <div className='sm:w-[50%] sm:mt-0 mt-8 grid grid-cols-2 gap-10'>
+                        <div className='sm:w-[50%] sm:mt-0 mt-8 grid grid-cols-2 sm:gap-10 gap-3'>
                             <div>
                                 <img src={coinbase} className='lg:w-[30%] w-[50%]' alt="" />
-                                <p className='text-[#0C231F] text-base font-medium font-inter mt-5'>Make secure payments online, and transfer digital currency with just a touch of your device.</p>
+                                <p className='text-[#0C231F] sm:text-base text-sm font-medium font-inter mt-5'>Make secure payments online, and transfer digital currency with just a touch of your device.</p>
                             </div>
                             <div>
                                 <img src={metaMask} className='lg:w-[30%] w-[50%]' alt="" />
-                                <p className='text-[#0C231F] text-base font-medium font-inter mt-5'>Easily link your personal wallet account to our platform for seamless and secure trading.</p>
+                                <p className='text-[#0C231F] sm:text-base text-sm font-medium font-inter mt-5'>Easily link your personal wallet account to our platform for seamless and secure trading.</p>
                             </div>
                             <div>
-                                <img src={metaMask} className='lg:w-[30%] w-[50%]' alt="" />
-                                <p className='text-[#0C231F] text-base font-medium font-inter mt-5'>Accept payments from customers around the world directly, whilst storing your wealth offline and off-grid.</p>
+                                <img src={icp} className='lg:w-[20%] w-[30%]' alt="" />
+                                <p className='text-[#0C231F] sm:text-base text-sm font-medium font-inter mt-5'>ICP ensures secure connections, safeguarding your interactions with robust privacy measures.</p>
                             </div>
                             <div>
                                 <img src={openWallet} className='lg:w-[30%] w-[50%]' alt="" />
-                                <p className='text-[#0C231F] text-base font-medium font-inter mt-5'>Coming Soon! Open wallet with additional security features and escrow assurance on funds.</p>
+                                <p className='text-[#0C231F] sm:text-base text-sm font-medium font-inter mt-5'>Coming Soon! Open wallet with additional security features and escrow assurance on funds.</p>
                             </div>
                         </div>
                     </div>
@@ -573,27 +574,27 @@ const Welcome = () => {
                         </div>
                         <div className='sm:w-[20%] w-[40%]'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Company</h4>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>About us</p>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Contact</p>
+                            <a href='https://wguj2-hyaaa-aaaah-aq5oq-cai.raw.icp0.io/blobs/79023993439628405340827665793437048426' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>About us</a>
+                            <a href='https://wguj2-hyaaa-aaaah-aq5oq-cai.raw.icp0.io/blobs/79023993439628405340827665793437048426' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Contact</a>
                         </div>
                         <div className='sm:w-[20%] w-[40%]'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Resources</h4>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Education Material</p>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Help center</p>
+                            <a href='https://oc.app/community/exg3j-cqaaa-aaaar-a4frq-cai/channel/117201654407067676294753699638752874140/?ref=t6orw-qyaaa-aaaar-axbua-cai' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Education Material</a>
+                            <a href="https://t.me/open_investment_dapp" className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Help center</a>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Support</p>
                         </div>
                         <div className='sm:w-[20%] w-[40%]'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Social</h4>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Twitter</p>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>LinkedIn</p>
+                            <a href='https://x.com/openinvestment_?s=21' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Twitter</a>
+                            <a href='https://www.linkedin.com/company/open-investment-group' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>LinkedIn</a>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Facebook</p>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Instagram</p>
+                            <a href='https://www.instagram.com/openinvestmentapp?igsh=anF4dzBsMmw5MGhm' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Instagram</a>
                         </div>
                         <div className='sm:w-[20%] w-[40%]'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Legal</h4>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Terms</p>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Privacy</p>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Legals</p>
+                            <a href=' https://finance.ec.europa.eu/document/download/8ba9c73e-53ee-4ea0-94c4-bdca5850f138_en?filename=finance-events-240611-privacy-statement_en.pdf&prefLang=fi' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Privacy</a>
+                            <a href='https://tokeny.com/wp-content/uploads/2023/08/Tokenization-Legal-Kit-Checklist.pdf' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Legals</a>
                         </div>
                     </div>
                 </div>
