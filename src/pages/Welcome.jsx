@@ -309,7 +309,7 @@ const Welcome = () => {
                         <div className='sm:w-[45%]'>
                             <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Seamless trading and banking solutions.</h2>
                             <p className='text-[#0c231F99] sm:text-base text-sm font-medium font-inter sm:mt-10 mt-5'>Experience the ultimate financial revolution as you escrow your digital assets to buy stock and commodities options seamlessly.</p>
-                            <p className='text-[#0c231F99] sm:text-base text-sm font-medium font-inter mt-5'>With our user-friendly platform, you can trade, swap, and sell tokenised shares with ease, all within a secure and transparent environment. Embrace the power of DeFi and diversify your digital investments to enjoy the potential gains from traditional stock markets. Join us now and unlock a world of limitless possibilities in the exciting realm of decentralised finance. </p>
+                            <p className='text-[#0c231F99] sm:text-base text-sm font-medium font-inter mt-5'>With our user-friendly platform, you can trade, swap, and sell tokenised shares with ease, all within a secure and transparent environment. Embrace the power of DeFi and diversify your digital investments to enjoy potential gains from traditional stock markets. Join us now and unlock a world of limitless possibilities in the exciting realm of decentralised finance. </p>
                             <p className='text-[#0c231F99] sm:text-base text-sm font-medium font-inter mt-10'>Trusted by the world’s most ambitious companies</p>
                             <img src={chain} className='sm:w-[85%] w-full mt-5' alt="" />
                         </div>
@@ -323,7 +323,7 @@ const Welcome = () => {
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:w-[67%]'>
                         <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Global unity, the future made easy.</h2>
-                        <p className='text-[#0c231F99] text-justify text-base font-medium font-inter mt-4'>Fractional equity shares allow investors to own a fraction of a share rather than having to purchase whole shares, instantly and from anywhere in the world. These equity shares will be represented as digital tokens on the blockchain and in users personal wallet, providing the benefits of transparency, security and ease of transfer.</p>
+                        <p className='text-[#0c231F99] text-justify text-base font-medium font-inter mt-4'>Fractional equity shares allow investors to own a portion or sliceof of a share rather than having to purchase whole shares, instantly and from anywhere in the world. These equity shares will be represented as digital tokens on the blockchain and secured in their personal wallet, providing the benefits of transparency, security and ease of transfer.</p>
                     </div>
                 </div>
 
@@ -470,10 +470,10 @@ const Welcome = () => {
                         <div className='sm:w-[45%] flex items-center justify-center  bg-[#F1F3F3] p-8 border-[3px] border-[#23645E]'>
                             <img src={tradingInvesting} className='w-full' alt="" />
                         </div>
-                        <div className='sm:w-[54%] sm:pl-3 sm:mt-0 mt-5'>
+                        <div className='sm:w-[54%] sm:pl-3 sm:mt-0 mt-5 flex flex-col items-start'>
                             <h2 className='text-[#0C231F] lg:leading-none leading-snug lg:text-[48px] md:text-[34px] text-[26px] font-inter font-semibold'>Swap your currencies into equity in just one click.</h2>
                             <p className='text-[#0c231F99] text-base font-medium font-inter sm:mt-5 mt-3'>Welcome to Open, where digital trading meets stock market. Our cutting-edge platform is designed to provide you with the best experience, with a wide range of features that cater to every investor’s needs.</p>
-                            <button className='hover:bg-[#E1FFA0] hover:text-[#35816C] bg-[#35816C] text-[#E1FFA0] transition sm:px-8 sm:py-3.5 px-6 py-2.5 text-base rounded-lg mt-5  font-semibold font-inter '>Learn More</button>
+                            <a href='https://wguj2-hyaaa-aaaah-aq5oq-cai.raw.icp0.io/blobs/79023993437974540667589361053914346238' className='hover:bg-[#E1FFA0] hover:text-[#35816C] bg-[#35816C] text-[#E1FFA0] transition sm:px-8 sm:py-3.5 px-6 py-2.5 text-base rounded-lg mt-5  font-semibold font-inter '>Learn More</a>
                         </div>
 
                     </div>
@@ -508,11 +508,11 @@ const Welcome = () => {
             <div className='bg-[#F1F3F3] flex justify-center -mt-36 lg:pb-[350px] md:pb-[200px] pb-[120px] lg:pt-[350px] md:pt-[250px] pt-[200px] sm:px-0 px-7'>
                 <div id='integrations'  className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-start'>
-                        <div  className='sm:w-[40%]'>
+                        <div  className='sm:w-[40%] flex flex-col items-start'>
                             <img src={walletIntegrations} className='sm:w-[13%] w-[20%]' alt="" />
                             <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold mt-5'>Wallet Integrations</h2>
                             <p className='text-[rgba(12, 35, 31, 0.6)] lg:text-base text-sm font-medium font-inter mt-5'>Wallet integration combines diverse digital assets into a single interface, offering users seamless management and control. With enhanced security measures and accessibility across devices, users can conveniently send, receive and participate in DeFi activities. The integration provides valuable insight into asset performance, empowering users to make informed decisions while ensuring their funds are protected.</p>
-                            <button className='hover:bg-[#E1FFA0] hover:text-[#35816C] bg-[#0C231F] text-[#E1FFA0] transition px-7 py-2.5 rounded-lg mt-5 text-base font-semibold font-inter '>Learn More</button>
+                            <a href='https://wguj2-hyaaa-aaaah-aq5oq-cai.raw.icp0.io/blobs/79023993437974540667589361053914346238' className='hover:bg-[#E1FFA0] hover:text-[#35816C] bg-[#0C231F] text-[#E1FFA0] transition px-7 py-2.5 rounded-lg mt-5 text-base font-semibold font-inter '>Learn More</a>
                         </div>
                         <div className='sm:w-[50%] sm:mt-0 mt-8 grid grid-cols-2 sm:gap-10 gap-3'>
                             <div>
