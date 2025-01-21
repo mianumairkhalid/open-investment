@@ -529,7 +529,7 @@ const Welcome = () => {
                             </div>
                             <div>
                                 <img src={openWallet} className='lg:w-[30%] w-[50%]' alt="" />
-                                <p className='text-[#0C231F] sm:text-base text-sm font-medium font-inter mt-5'>Coming Soon! Open wallet with additional security features and escrow assurance on funds.</p>
+                                <p className='text-[#0C231F] sm:text-base text-sm font-medium font-inter mt-5'>Coming Soon! Open wallet with additional security features and escrow assurance of funds.</p>
                             </div>
                         </div>
                     </div>
