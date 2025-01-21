@@ -558,7 +558,7 @@ const Welcome = () => {
                                 </div>
                                 <div className='flex gap-3 items-center'>
                                     <img src={location} className='w-[15px]' alt="" />
-                                    <p className='font-inter sm:text-base text-sm text-white font-semibold'>5St Bride Street, London, EC4A 4AS</p>
+                                    <p className='font-inter sm:text-base text-sm text-white font-semibold'>5 St Bride Street, London, EC4A 4AS</p>
                                 </div>
                             </div>
                         </div>
