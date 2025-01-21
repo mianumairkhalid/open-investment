@@ -600,11 +600,15 @@ const Welcome = () => {
                 </div>
                 <div className='sm:pt-[40px] pb-[px] flex justify-center'>
                     <div className='lg:w-[85%] md:w-[95%] w-full flex justify-between items-center'>
-                        <div className='w-[50%]'>
+                        <div className='w-[50%] flex gap-7 items-center'>
                             <img src={logo} className='lg:w-[15%] md:w-[35%] w-[50%]' alt="" />
+                            <div className='flex gap-3 items-center'>
+                            <img src={icp} className='w-[13%] h-auto' alt="" />
+<h4 className='font-inter text-sm text-white font-medium'>Powered by Internet Computer</h4>
+                            </div>
                         </div>
                         <div className='w-[50%]'>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium mt-5'>Copyright: © 2025 Open Investment by Eni Koci. All Rights Reserved.</p>
+                            <p className='font-inter sm:text-lg text-sm text-white font-medium'>Copyright: © 2025 Open Investment by Eni Koci. All Rights Reserved.</p>
                         </div>
                     </div>
                 </div>
