@@ -564,7 +564,7 @@ const Welcome = () => {
                         </div>
                     </div>
                 </div>
-                <div className='sm:pt-[70px] pt-[50px] border-b border-[#FFFFFF1F] pb-[50px] flex justify-center'>
+                <div className='sm:pt-[70px] pt-[50px] border-b border-[#FFFFFF1F] pb-[50px] flex justify-center z-50 relative'>
                     <div className='lg:w-[85%] md:w-[95%] w-full sm:gap-0 gap-5 flex sm:flex-nowrap flex-wrap justify-between'>
                         <div className='sm:w-[20%] w-[40%] flex flex-col'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Product</h4>
