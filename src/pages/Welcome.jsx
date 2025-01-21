@@ -96,11 +96,11 @@ const Welcome = () => {
     return (
         <div className="w-full">
 
-            <header 
-            style={{
-                transition: "0.5s ease",
-            }}
-             ref={headerRef}  className={`${headerClassName} z-[101] duration-300 shadow-sm`}>
+            <header
+                style={{
+                    transition: "0.5s ease",
+                }}
+                ref={headerRef} className={`${headerClassName} z-[101] duration-300 shadow-sm`}>
                 <div className='w-full mx-auto flex items-center justify-between px-2'>
                     <div className='flex items-center justify-between w-full '>
                         <img src={logo} alt="" className='md:h-[70px] h-[26px]' />
@@ -125,15 +125,15 @@ const Welcome = () => {
                             Open App
                         </div>
                         <div className="w-[40px] h-[40px] flex flex-col justify-center items-center cursor-pointer lg:hidden transition-all duration-300" onClick={() => setHamburger(prev => !prev)}>
-                            <div  style={{
-                            backgroundColor: isScrolled ? '#000' : '#fff',
-                        }} className={` w-[20px] h-[2px] transition-all duration-500 ${hamburger ? '-rotate-45 translate-y-[8px] delay-200 bg-black' : 'rotate-0 translate-y-0 '}`}></div>
-                            <div  style={{
-                            backgroundColor: isScrolled ? '#000' : '#fff',
-                        }} className={` h-[2px] my-[6px] transition-all duration-300 ${hamburger ? 'w-0' : 'w-[14px] delay-300'}`}></div>
-                            <div  style={{
-                            backgroundColor: isScrolled ? '#000' : '#fff',
-                        }} className={`w-[20px] h-[2px] transition-all duration-500 ${hamburger ? 'rotate-45 -translate-y-[8px] delay-200 bg-black' : 'rotate-0 translate-y-0 '}`}></div>
+                            <div style={{
+                                backgroundColor: isScrolled ? '#000' : '#fff',
+                            }} className={` w-[20px] h-[2px] transition-all duration-500 ${hamburger ? '-rotate-45 translate-y-[8px] delay-200 bg-black' : 'rotate-0 translate-y-0 '}`}></div>
+                            <div style={{
+                                backgroundColor: isScrolled ? '#000' : '#fff',
+                            }} className={` h-[2px] my-[6px] transition-all duration-300 ${hamburger ? 'w-0' : 'w-[14px] delay-300'}`}></div>
+                            <div style={{
+                                backgroundColor: isScrolled ? '#000' : '#fff',
+                            }} className={`w-[20px] h-[2px] transition-all duration-500 ${hamburger ? 'rotate-45 -translate-y-[8px] delay-200 bg-black' : 'rotate-0 translate-y-0 '}`}></div>
                         </div>
 
                     </div>
@@ -240,7 +240,7 @@ const Welcome = () => {
 
 
             <div
-            id='overview'
+                id='overview'
                 style={{
                     backgroundColor: 'transparent',
                     backgroundImage: 'linear-gradient(180deg, #0C231F 0%, #134341 100%)',
@@ -506,9 +506,9 @@ const Welcome = () => {
                 </div>
             </div>
             <div className='bg-[#F1F3F3] flex justify-center -mt-36 lg:pb-[350px] md:pb-[200px] pb-[120px] lg:pt-[350px] md:pt-[250px] pt-[200px] sm:px-0 px-7'>
-                <div id='integrations'  className='lg:w-[85%] md:w-[95%] w-full'>
+                <div id='integrations' className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between items-start'>
-                        <div  className='sm:w-[40%] flex flex-col items-start'>
+                        <div className='sm:w-[40%] flex flex-col items-start'>
                             <img src={walletIntegrations} className='sm:w-[13%] w-[20%]' alt="" />
                             <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold mt-5'>Wallet Integrations</h2>
                             <p className='text-[rgba(12, 35, 31, 0.6)] lg:text-base text-sm font-medium font-inter mt-5'>Wallet integration combines diverse digital assets into a single interface, offering users seamless management and control. With enhanced security measures and accessibility across devices, users can conveniently send, receive and participate in DeFi activities. The integration provides valuable insight into asset performance, empowering users to make informed decisions while ensuring their funds are protected.</p>
@@ -599,15 +599,15 @@ const Welcome = () => {
                     </div>
                 </div>
                 <div className='sm:pt-[40px] pb-[px] flex justify-center'>
-                    <div className='lg:w-[85%] md:w-[95%] w-full flex justify-between items-center'>
-                        <div className='w-[50%] flex gap-12 items-center'>
-                            <img src={logo} className='lg:w-[15%] md:w-[35%] w-[50%]' alt="" />
+                    <div className='lg:w-[85%] sm:py-0 py-4 md:w-[95%] w-full sm:flex justify-between items-center'>
+                        <div className='sm:w-[50%] flex sm:gap-12 gap-7 items-center sm:pb-0 pb-5'>
+                            <img src={logo} className='lg:w-[15%] md:w-[35%] w-[30%]' alt="" />
                             <div className='flex gap-3 items-center'>
-                            <img src={icp} className='w-[13%] h-auto' alt="" />
-<h4 className='font-inter text-sm text-white font-medium'>Powered by Internet Computer</h4>
+                                <img src={icp} className='w-[13%] h-auto' alt="" />
+                                <h4 className='font-inter text-sm text-white font-medium'>Powered by Internet Computer</h4>
                             </div>
                         </div>
-                        <div className='w-[50%]'>
+                        <div className='sm:w-[50%]'>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium'>Copyright: © 2025 Open Investment by Eni Koci. All Rights Reserved.</p>
                         </div>
                     </div>
