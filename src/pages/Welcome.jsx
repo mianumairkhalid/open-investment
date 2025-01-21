@@ -443,7 +443,7 @@ const Welcome = () => {
                             <img src={contract} alt="" />
                         </div>
                         <div className='sm:w-[49%] sm:pl-10'>
-                            <h2 className='text-[#0C231F] sm:mt-0 mt-5 leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Smart contract automation</h2>
+                            <h2 className='text-[#0C231F] sm:mt-0 mt-5 leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Smart contract automation.</h2>
                             <p className='text-[#0c231F99] text-base font-medium font-inter sm:mt-5 mt-3'>Smart contracts are at the heart of our groundbreaking approach to tokenised shares and secure transactions. Leveraging the power of smart contracts, we offer users the ability to trade and invest in tokenised shares seamlessly, without the need for traditional intermediaries. When users decide to lock their digital currency for tokenised shares, our smart contract escrow lock ensures that their funds are held securely until the predetermined conditions are met. </p>
                         </div>
 
@@ -455,7 +455,7 @@ const Welcome = () => {
                     <div className='flex sm:flex-row flex-col-reverse gap-10 justify-between items-center'>
 
                         <div className='sm:w-[49%] sm:pr-10'>
-                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Escrow assurance and security</h2>
+                            <h2 className='text-[#0C231F] leading-none lg:text-[48px] md:text-[36px] text-[26px]  font-inter font-semibold'>Escrow assurance and security.</h2>
                             <p className='text-[#0c231F99] text-base font-medium font-inter mt-5'>Our innovative approach provides users with exposure to traditional stock markets without the need to convert their digital assets into fiat. By keeping their funds within the platform, users avoid extra fees and complexities associated with transferring funds between different accounts. Additionally, this integration allows for seamless and instantaneous trading between tokenized shares and fiat, enabling users to capitalize on market opportunities swiftly. </p>
                         </div>
                         <div className='sm:w-[49%] flex items-center justify-center  bg-[#F1F3F3] py-5 px-14 rounded-2xl border-[3px] border-[#23645E]'>
