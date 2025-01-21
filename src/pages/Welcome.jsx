@@ -600,7 +600,7 @@ const Welcome = () => {
                 </div>
                 <div className='sm:pt-[40px] pb-[px] flex justify-center'>
                     <div className='lg:w-[85%] md:w-[95%] w-full flex justify-between items-center'>
-                        <div className='w-[50%] flex gap-7 items-center'>
+                        <div className='w-[50%] flex gap-12 items-center'>
                             <img src={logo} className='lg:w-[15%] md:w-[35%] w-[50%]' alt="" />
                             <div className='flex gap-3 items-center'>
                             <img src={icp} className='w-[13%] h-auto' alt="" />
