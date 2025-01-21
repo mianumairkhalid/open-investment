@@ -566,31 +566,31 @@ const Welcome = () => {
                 </div>
                 <div className='sm:pt-[70px] pt-[50px] border-b border-[#FFFFFF1F] pb-[50px] flex justify-center'>
                     <div className='lg:w-[85%] md:w-[95%] w-full sm:gap-0 gap-5 flex sm:flex-nowrap flex-wrap justify-between'>
-                        <div className='sm:w-[20%] w-[40%]'>
+                        <div className='sm:w-[20%] w-[40%] flex flex-cols'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Product</h4>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Overview</p>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Features</p>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Solutions</p>
                         </div>
-                        <div className='sm:w-[20%] w-[40%]'>
+                        <div className='sm:w-[20%] w-[40%] flex flex-cols'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Company</h4>
                             <a href='https://wguj2-hyaaa-aaaah-aq5oq-cai.raw.icp0.io/blobs/79023993439628405340827665793437048426' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>About us</a>
                             <a href='https://wguj2-hyaaa-aaaah-aq5oq-cai.raw.icp0.io/blobs/79023993439628405340827665793437048426' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Contact</a>
                         </div>
-                        <div className='sm:w-[20%] w-[40%]'>
+                        <div className='sm:w-[20%] w-[40%] flex flex-cols'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Resources</h4>
                             <a href='https://oc.app/community/exg3j-cqaaa-aaaar-a4frq-cai/channel/117201654407067676294753699638752874140/?ref=t6orw-qyaaa-aaaar-axbua-cai' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Education Material</a>
                             <a href="https://t.me/open_investment_dapp" className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Help center</a>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Support</p>
                         </div>
-                        <div className='sm:w-[20%] w-[40%]'>
+                        <div className='sm:w-[20%] w-[40%] flex flex-cols'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Social</h4>
                             <a href='https://x.com/openinvestment_?s=21' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Twitter</a>
                             <a href='https://www.linkedin.com/company/open-investment-group' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>LinkedIn</a>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Facebook</p>
                             <a href='https://www.instagram.com/openinvestmentapp?igsh=anF4dzBsMmw5MGhm' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Instagram</a>
                         </div>
-                        <div className='sm:w-[20%] w-[40%]'>
+                        <div className='sm:w-[20%] w-[40%] flex flex-cols'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Legal</h4>
                             <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Terms</p>
                             <a href=' https://finance.ec.europa.eu/document/download/8ba9c73e-53ee-4ea0-94c4-bdca5850f138_en?filename=finance-events-240611-privacy-statement_en.pdf&prefLang=fi' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Privacy</a>
