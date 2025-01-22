@@ -302,7 +302,7 @@ const Welcome = () => {
                     </div>
                 </div>
             </div>
-            <div className='bg-[#FDFEFD] flex justify-center sm:pt-36 pt-24 sm:px-0 px-7'>
+            <div className='bg-[#FDFEFD] flex justify-center sm:pt-36 pt-24 sm:px-0 px-7' id='solutions'>
                 <div className='lg:w-[85%] md:w-[95%] w-full'>
                     <div className='sm:flex justify-between'>
                         <div className='sm:w-[45%]'>
@@ -567,9 +567,9 @@ const Welcome = () => {
                     <div className='lg:w-[85%] md:w-[95%] w-full sm:gap-0 gap-5 flex sm:flex-nowrap flex-wrap justify-between'>
                         <div className='sm:w-[20%] w-[40%] flex flex-col'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Product</h4>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Overview</p>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Features</p>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Solutions</p>
+                            <a href='#overview' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Overview</a>
+                            <a href='#features' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Features</a>
+                            <a href='#solutions' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Solutions</a>
                         </div>
                         <div className='sm:w-[20%] w-[40%] flex flex-col'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Company</h4>
@@ -580,7 +580,7 @@ const Welcome = () => {
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Resources</h4>
                             <a href='https://oc.app/community/exg3j-cqaaa-aaaar-a4frq-cai/channel/117201654407067676294753699638752874140/?ref=t6orw-qyaaa-aaaar-axbua-cai' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Education Material</a>
                             <a href="https://t.me/open_investment_dapp" className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Help center</a>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Support</p>
+                            <a href='https://chat.whatsapp.com/GKbYDXtHek23ZlU2PjG86U' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Support</a>
                         </div>
                         <div className='sm:w-[20%] w-[40%] flex flex-col'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Social</h4>
