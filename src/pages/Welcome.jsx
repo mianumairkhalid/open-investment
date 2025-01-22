@@ -586,12 +586,14 @@ const Welcome = () => {
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Social</h4>
                             <a href='https://x.com/openinvestment_?s=21' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Twitter</a>
                             <a href='https://www.linkedin.com/company/open-investment-group' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>LinkedIn</a>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Facebook</p>
+                            <a href='https://chat.whatsapp.com/GKbYDXtHek23ZlU2PjG86U' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>WhatsApp</a>
+                            <a href='https://t.me/open_investment_dapp' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Telegram</a>
+                            <a href='https://oc.app/community/exg3j-cqaaa-aaaar-a4frq-cai/channel/117201654407067676294753699638752874140/?ref=t6orw-qyaaa-aaaar-axbua-cai' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>OpenChat</a>
                             <a href='https://www.instagram.com/openinvestmentapp?igsh=anF4dzBsMmw5MGhm' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Instagram</a>
                         </div>
                         <div className='sm:w-[20%] w-[40%] flex flex-col'>
                             <h4 className='text-[#FFFFFF5C] text-sm font-semibold font-inter'>Legal</h4>
-                            <p className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Terms</p>
+                            <a href='https://www.fsb.org/uploads/P221024-2.pdf' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-5 mt-2'>Terms</a>
                             <a href=' https://finance.ec.europa.eu/document/download/8ba9c73e-53ee-4ea0-94c4-bdca5850f138_en?filename=finance-events-240611-privacy-statement_en.pdf&prefLang=fi' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Privacy</a>
                             <a href='https://tokeny.com/wp-content/uploads/2023/08/Tokenization-Legal-Kit-Checklist.pdf' className='font-inter sm:text-lg text-sm text-white font-medium sm:mt-3 mt-1'>Legals</a>
                         </div>
