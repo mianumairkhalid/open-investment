@@ -213,8 +213,7 @@ const Welcome = () => {
                         <p className="sm:text-base text-sm font-inter font-semibold text-[#E1FFA0]">All-in-one personal banking and investing solutions.</p>
                         <h1 className="lg:text-[72px] sm:text-[56px] text-[42px] text-white font-inter font-bold leading-none mt-2">Open App.</h1>
                         <p className="sm:text-lg text-sm text-[#FFFFFF8F] font-semibold mt-3">
-                            Open Investment is a revolutionary app that allows users to trade digital currency
-                            for stock and commodities options in a decentralized and immutable exchange.
+                        Open Investment is a revolutionary platform that allows users to trade digital currency for stock and commodities options in a decentralized and immutable exchange.
                         </p>
                     </div>
 
